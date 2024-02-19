@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>DreamStory</title>
+    <link rel="shortcut icon" type="icono.jpg" href="icono.jpg">
+</head>
+<body>
+    <!--Código css-->
+    <style>
+        body {
+            background-image: url("fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #BBDADD;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .div-imagen {
+            display: inline-flex;
+            position: relative;
+            
+        }
+
+            .div-imagen > div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -4;
+                padding: 10px;
+                margin: 10px;
+               
+            }
+    </style>
+
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary opacity-75">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="DreamStory" width="120" height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="PRACTICA1_DreamBooks.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PRACTICA1_Inicio.html">Historias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Biblioteca
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="PRACTICA1_Leidos.html"> Leídos </a></li>
+                            <li><a class="dropdown-item" href="PRACTICA1_Pendientes.html"> Pendientes</a></li>
+                            <li><a class="dropdown-item" href="PRACTICA1_Tienda.html"> Sugerencias </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">D.S</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book-half" viewBox="0 -3 20 20">
+                        <path d="M8.3 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                    </svg>
+                    <input class="form-control me-2" type="search" placeholder="Búscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Búscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br />
+    <br />
+    <!--Titulo -->
+    <div class="container-fluid">
+        <div style="text-align: center;">
+            <font color="Black" face="Lucida Bright"><h4><b> Estas son tus historias leídas, ¿Cuántas mas leeras?  </b></h4></font>
+        </div>
+    </div>
+    <br />
+
+    <!-- Galeria de Imagenes -->
+    <div class="container wrapper">
+        <div class="div-imagen">
+            <img class="desvanecer" src="Artemis.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <img class="desvanecer" src="cadenas.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <img class="desvanecer" src="carolina.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <img class="desvanecer" src="frey.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <img class="desvanecer" src="Heist.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <img class="desvanecer" src="Jack.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <img class="desvanecer" src="mentirosos.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <img class="desvanecer" src="NuevoMundo.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <img class="desvanecer" src="Otoño.jpg" width="250" height="400" />
+        </div>
+
+    </div>
+    <br />
+    <br />
+
+</body>
+</html>

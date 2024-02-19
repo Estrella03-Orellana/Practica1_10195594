@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>DreamStory</title>
+    <link rel="shortcut icon" type="icono.jpg" href="icono.jpg">
+    <meta charset="utf-8" />
+</head>
+<body>
+    <!--Codigo css-->
+    <style>
+        body {
+            background-image: url("fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #BBDADD;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .div-imagen {
+            display: inline-flex;
+            position: relative
+        }
+
+            .div-imagen > div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -4;
+                padding: 10px;
+                margin: 10px;
+            }
+
+        .desvanecer:hover {
+            opacity: 0.07;
+            -webkit-transition: opacity 500ms;
+            -moz-transition: opacity 500ms;
+            -o-transition: opacity 30ms;
+            -ms-transition: opacity 500ms;
+            transition: opacity 500ms;
+        }
+    </style>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary opacity-75">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="DreamStory" width="120" height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="PRACTICA1_DreamBooks.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PRACTICA1_Inicio.html">Historias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Biblioteca
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="PRACTICA1_Leidos.html"> Leídos </a></li>
+                            <li><a class="dropdown-item" href="PRACTICA1_Pendientes.html"> Pendientes</a></li>
+                            <li><a class="dropdown-item" href="PRACTICA1_Tienda.html"> Sugerencia </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">D.S</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book-half" viewBox="0 -3 20 20">
+                        <path d="M8.3 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                    </svg>
+                    <input class="form-control me-2" type="search" placeholder="Búscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Búscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<br />
+
+    <div class="container wrapper">
+        <font color="Black" face="Lucida Bright"><h3><b> Top 3 Mejores Historias </b></h3></font>
+        <table class="table table-striped" border="0">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Libro</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">Vistas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Fleur</td>
+                    <td>Ariana Godoy</td>
+                    <td>68.9 M</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>El corazón del Rey.[Rey 3]</td>
+                    <td>Karine Bernal</td>
+                    <td>28.2 M</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Frey</td>
+                    <td>Ariana Godoy</td>
+                    <td>5.92 M</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Titutlo -->
+    <br />
+    <br />
+    <div style="text-align:center;">
+        <font color="Black" face="Lucida Bright"><h3><b> Historias Completadas </b></h3></font>
+    </div>
+    <br />
+
+    <!--Historias imagenes-->
+    <div class="container wrapper">
+        <div class="div-imagen">
+            <div>
+                Imily es una joven chica que vive siempre en su mundo de fantasía tratando de olvidar lo cruel
+                que puede ser la sociedad, escribiendo notas del como se siente con respecto a su vida, un día
+                Imily dejo olvidada una de sus notas, llegan a si a manos de un desconocido que le respondió y
+                le dio ánimos, ¿logra Imily descubrir quien fue?
+            </div>
+            <img class="desvanecer" src="fantasy.png" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                ¿Aún recuerdas el misterioso que respondió la nota de Imily? Pues, bienvenido al mundo de Ossian, un
+                chico que aprendió a liberar sus sentimientos gracias a una chica que olvido una pequeña nota, creando así
+                las suya, creando Nuevas notas.
+            </div>
+            <img class="desvanecer" src="fantasy2.png" width="250" height="400" />
+        </div>
+
+
+        <div class="div-imagen">
+            <div>
+                Ossian llego a Inglaterra para termina sus estudios, llevándose consigo el pesar de no haber hablado con
+                Imily en persona, pero hay algo que él no sabe, un año después, Imily obtuvo la oportunidad de estudiar
+                en Inglaterra también, ¿Cómo será que lo descubrirán?
+            </div>
+            <img class="desvanecer" src="fantasy3.png" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                Mi madre una vez me dijo que las simples casualidades pueden llevarte a un gran desenlace, no tenia idea lo que
+                ella decía, hasta el momento que viví un sinfín de cosas al lado de muchas personas, creí que mi madre había muerto
+                por amor, prometí jamás enamorarme para no terminar como ella, pero creo que rompí mi propia promesa…creo que si me enamore.
+            </div>
+            <img class="desvanecer" src="prometo.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                El mundo tiene muchas cosas que contar, al igual que la mente de un escritor, pasando muchas cosas por
+                su cabeza, pensando en como hacerlas llegar, pequeñas historias sin sentido o pequeñas historias para
+                los lectores que viven en un mundo sin sentido.
+
+            </div>
+            <img class="desvanecer" src="historias.png" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                “No trato de hacer simple poesía, solo trato de que otros comprendan mi sentir con sincera poesía”
+            </div>
+            <img class="desvanecer" src="poemas.png" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                Dos hermanas nacidas en el cielo para poder salvar la humanidad, un destino incierto e impuesto en los
+                hombros de dos chicas jóvenes con ninguna pizca de conocimiento del planeta tierra, ambas tendrán que
+                aprender a vivir con los humanos y huir de las manos de los soldados, las hermanas del cielo tendrán que
+                aprender a sobrevivir al grupo apocalíptico de los cometas.
+
+            </div>
+            <img class="desvanecer" src="stars.png" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                Una noche fue suficiente para cambiarlo todo, para destruirlo todo. Él acabó con mi familia, con todo lo que
+                amo y por alguna razón me dejó con vida, ¿Por qué? Es tan doloroso vivir después de esa noche, tal vez él quería
+                que viviera y sufriera, ese me parece un destino aun más cruel que la muerte.
+
+            </div>
+            <img class="desvanecer" src="Fleur.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                Él llegó a mí con una propuesta inusual.
+                Ser su doncella.
+                Jamás imaginé que esa propuesta sellaría mi destino. Él se convirtió en mi deseo, mi tentación y mi pecado, mientras
+                que yo, me he convertido en la doncella del vampiro.
+            </div>
+            <img class="desvanecer" src="Doncella.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                Victoria Massey es trasladada al internado Fennoith tras intentar envenenar a su padrastro con matarratas. Después de
+                la muerte de Adelaide Massey, la relación de ambos empeoró. Adelaide dejó en herencia toda su fortuna a su hija única
+                , la joven Victoria. Benjamín, viudo y padrastro de la muchacha, crédulo pensó que la fortuna de Adelaide sería para él.
+
+            </div>
+            <img class="desvanecer" src="infierno.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                A él lo ocultaron desde su nacimiento.
+                Nadie lo ha visto nunca.
+                En sus 20 años, jamás ha salido del palacio.
+                Se dice que es una vergüenza.
+                Pero en seis meses será el rey.
+                Así que ella ha llegado para entrenarlo.
+                Para cambiarlo.
+                Solo que él tiene algunos secretos.
+                Y también unos cuantos juegos que pueden complicarlo.
+
+            </div>
+            <img class="desvanecer" src="principe.jpg" width="250" height="400" />
+        </div>
+
+        <div class="div-imagen">
+            <div>
+                Las huellas de un pasado doloroso persiguen al rey Magnus Lacrontte, quien ha levantado murallas para
+                no volver a ser lastimado o traicionado, pero aún así el destino siempre encuentra una manera de burlarse
+                de él, dejándolo en la posición menos ventajosa según su percepción. Estar enamorado
+
+            </div>
+            <img class="desvanecer" src="Rey.jpg" width="250" height="400" />
+        </div>
+    </div>
+
+</body>
+</html>
